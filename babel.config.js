@@ -18,7 +18,8 @@ module.exports = {
           '@redux': './src/redux',
           '@services': './src/services',
           '@utils': './src/utils',
-          '@hooks': './src/hooks'
+          '@hooks': './src/hooks',
+          '@theme': './src/theme'
         }
       }
     ]

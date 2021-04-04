@@ -1,15 +1,21 @@
 // import { BookState } from '@interfaces/book';
-import { ReduxAction } from '@interfaces/redux';
+import { AppState, ReduxAction } from '@interfaces/redux';
 
-// import { actions } from './actions';
+import { actions } from './actions';
 
-const initialState = {
-  // TODO: Complete
+const initialState: AppState = {
+  books: []
 };
 
 const reducer = (state = initialState, action: ReduxAction) => {
+  // console.log(`[${action.type}] => `, { state, action });
   switch (action.type) {
-    // TODO: Complete switch with book actios
+    case actions.LOAD_BOOKS:
+      return {
+        ...state,
+        books: action.payload.books
+      };
+
     default:
       return state;
   }

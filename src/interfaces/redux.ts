@@ -1,5 +1,7 @@
+import { Book } from './book';
+
 export interface AppState {
-  // TODO: Complete
+  books: Book | never[];
 }
 
 export interface ReduxAction {

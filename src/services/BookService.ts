@@ -1,8 +1,9 @@
 import { BOOKS_MOCK } from '@constants/mockBooks';
+import wait from '@utils/wait';
 
 export default {
-  getBooks: () => {
-    // TODO: Complete => Return a new promise with BOOKS_MOCK and ok: true
+  getBooks: async () => {
+    await wait(3000);
     return { ok: true, data: BOOKS_MOCK };
   }
 };

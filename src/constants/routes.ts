@@ -1,5 +1,6 @@
 const Routes = {
-  LIBRARY: 'LIBRARY'
+  LIBRARY: 'LIBRARY',
+  BOOK: 'BOOK'
 };
 
 export default Routes;
